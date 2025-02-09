@@ -1,38 +1,210 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
+<head>
+    <title>Savory Bites</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="assets/images/logom(2)2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/animate.css">
 
-    <body>
-        
-        
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+        header {
+            background-color: #fff;
+        }
 
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+        header a {
+            color: #ed1c24;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: underline;
+            transition: 0.5s;
+        }
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+        header a:hover {
+            color: orangered;
+            text-decoration: underline;
+        }
+
+        .logo img {
+            width: 65px;
+        }
+
+        header .button button {
+            background-color: #ed1c24;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            transition: 0.5s;
+        }
+
+        header .button button:hover {
+            background-color: #000;
+        }
+
+        .ratio {
+            position: relative;
+            width: 100%;
+        }
+
+        .ratio video {
+            opacity: 0.2;
+        }
+
+        .ratio .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(126, 10, 10, 0.5);
+        }
+
+        .ratio img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner-img {
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            margin: 0 auto;
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+
+        .banner-img img {
+            width: 50%;
+            transition-behavior: ease-out;
+            transition-delay: 0.5s;
+        }
+
+        .dish {
+            padding: 40px 0px;
+        }
+
+        .dish .cart img{
+            width: 50%;
+            position: relative;
+            top: 100px;
+            left: 36px;
+            z-index: 1;
+        }
+
+        .dish .cart-content{
+            width: 280px;
+            height: 150px;
+            border: 1px solid #0000001a;
+            text-align: center;
+            position: absolute;
+            margin-top: 10px;
+        }
+
+        .dish .cart-content h5{
+            font-size: 20px;
+            font-weight: 500;
+            color: #000;
+            margin-top: 35%;
+        }
+
+        .dish .cart-content p{
+            font-size: 15px;
+            font-weight: 400;
+            color: #000;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row mt-4 mb-4 align-items-center">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <a href=""><img src="assets/images/logom(1).png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="menu d-flex justify-content-center">
+                        <a href="" class="me-5">Home</a>
+                        <a href="" class="me-5">About Us</a>
+                        <a href="" class="me-5">Contact Us</a>
+                        <a href="" class="me-5">Recipe</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="button d-flex justify-content-end">
+                        <a href="./login.html">
+                            <button class="btn btn-primary me-2">Login</button>
+                        </a>
+                        <a href="./signin.html">
+                            <button class="btn btn-primary me-2">Signin</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="banner bg-black">
+            <div class="col">
+                <div class="overlay"></div>
+                <div class="ratio ratio-16x9">
+                    <video autoplay muted loop>
+                        <source src="assets/videos/banner-video.mp4" type="video/mp4">
+                </div>
+                <div class="banner-img animate__fadeOut">
+                    <img src="assets/images/logom(2).png" alt="banner-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="dish">
+            <div class="conatiner">
+                <div class="row gx-0 d-flex justify-content-center">
+                    <h2>Most Search Recipes:</h2>
+                    <div class="col-4">
+                        <div class="cart">
+                            <img src="assets/images/img-3.jpg" class="img-fluid" alt="">
+                            <div class="cart-content">
+                                <h5 class="card-title">Fruit Salad</h5>
+                                <p class="card-text">Time: 20 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>

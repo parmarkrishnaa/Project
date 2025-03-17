@@ -1,32 +1,35 @@
-header {
+nav {
     background-color: #fff;
 }
 
-header a {
+nav a {
     color: #ed1c24;
     font-size: 18px;
     font-weight: 500;
+    text-decoration: none;
     transition: 0.5s;
 }
 
-header a:hover {
+nav a:hover {
     color: orangered;
+    text-decoration: underline;
 }
 
 .logo img {
     width: 65px;
 }
 
-header .button button {
+
+nav .button button {
     background-color: #ed1c24;
     color: #fff;
     border: none;
-    padding: 10px 30px;
+    padding: 7px 18px;
     transition: 0.5s;
 }
 
-header .button button:hover {
-    background-color: #000;
+nav .button button:hover {
+    background-color: #00000088;
 }
 
 .ratio {
